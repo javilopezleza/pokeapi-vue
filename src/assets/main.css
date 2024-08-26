@@ -1,0 +1,41 @@
+@import './base.css';
+
+#app {
+  width: 100%;
+  /* Asegúrate de que use todo el ancho disponible */
+  max-width: 100%;
+  /* Elimina cualquier límite máximo de ancho */
+  margin: 0 auto;
+  /* Centra el contenido si es necesario */
+  padding: 0;
+  /* Elimina el padding para usar todo el ancho */
+  box-sizing: border-box;
+  /* Incluye el padding en el ancho total */
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
