@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from 'vue-router';
   <header>
     <div class="wrapper">
       <nav>
-        <RouterLink to="/pokemonCard">PokeApi</RouterLink>
+        <RouterLink to="/">PokeApi</RouterLink>
       </nav>
     </div>
   </header>
